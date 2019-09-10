@@ -1,0 +1,25 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href = "/">Home</a>
+        <a href ="/addNewDeveloper">Insert New Developer|</a>
+        <a href = "/getAllDeveloper">Get All Developers|</a>
+        <a href = "/addNewTask">Insert New Task|</a>
+        <a href = "/getAllTasks">Get All Tasks|</a>
+        <a href = "/deleteTask">Delete Task|</a>
+        <a href= "/updateTask">Update Task</a>
+
+        <form action="/deleteAllCompletedTasks" method="POST">
+            <div class="blank">
+                Do you want to delete all completed tasks？
+                <label><input type="radio" name="deleteAll" value="YES">
+                YES</label>
+                <label><input type="radio" name="deleteAll" value="NO">
+                NO</label></br></br>
+                <button type= "submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

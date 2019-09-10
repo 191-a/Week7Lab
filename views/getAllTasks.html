@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href = "/">Home</a>
+    <a href ="/addNewDeveloper">Insert New Developer|</a>
+    <a href = "/getAllDeveloper">Get All Developers|</a>
+    <a href = "/addNewTask">Insert New Task|</a>
+    <a href = "/getAllTasks">Get All Tasks|</a>
+    <a href = "/deleteTask">Delete Task|</a>
+    <a href = "/deleteAllCompletedTasks">Delete All Completed Tasks|</a>
+    <a href= "/updateTask">Update Task</a>
+    </br>
+    <h3>Tasks:
+        <table>
+            <tr>
+                <td>Task ID</td>
+                <td>Task Name</td>
+                <td>Assign To</td>
+                <td>Due Date</td>
+                <td>Task Status</td>
+                <td>Task Description</td>
+            </tr>
+            <% for ( var i =0; i< taskDb.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= taskDb[i]._id %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].name %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].assignTo %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].dueDate %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].taskStatus %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].taskDescription %>
+                    </td>
+                        
+                </tr>
+                <% }%>
+    </h3>
+</body>
+</html>
